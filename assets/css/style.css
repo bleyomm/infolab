@@ -229,3 +229,36 @@ nav ul li a:hover::before {
     display: flex;
     flex-direction: row;
 }
+
+.container-text{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.container-text ul{
+    list-style: none;
+}
+
+.container-text ul li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-primary);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.container-text ul li p{
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color-secondary);
+    line-height: 1.5rem;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+
+.container-text ul li::before{
+    content: ">";
+}
