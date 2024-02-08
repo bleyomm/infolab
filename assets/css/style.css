@@ -181,7 +181,7 @@ nav ul li a:hover::before {
     transition: margin-top 0.3s ease-in;
 }
 
-.box:hover{
+.box:hover {
     margin-top: -30px;
     transition: margin-top 0.3s ease-in;
 }
@@ -225,22 +225,22 @@ nav ul li a:hover::before {
     background-color: #FFF;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
 }
 
-.container-text{
+.container-text {
     display: flex;
     justify-content: center;
     align-items: start;
 }
 
-.container-text ul{
+.container-text ul {
     list-style: none;
 }
 
-.container-text ul li{
+.container-text ul li {
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-weight: 700;
@@ -249,7 +249,7 @@ nav ul li a:hover::before {
     margin-bottom: 15px;
 }
 
-.container-text ul li p{
+.container-text ul li p {
     font-family: 'Inter', sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -259,6 +259,53 @@ nav ul li a:hover::before {
     padding-left: 10px;
 }
 
-.container-text ul li::before{
+.container-text ul li::before {
     content: ">";
+}
+
+
+/*nosotros*/
+
+#nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: #FFF;
+}
+
+.container-text{
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color-secondary);
+    line-height: 1.5rem;
+    padding: 0px 50px;
+}
+
+.container-text p{
+    padding: 20px 0px;
+}
+
+.container-text h4{
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: var(--color-primary);
+}
+
+.box-seccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.box-seccion .imagen{
+    padding: 10px;
+}
+
+.box-seccion .imagen img{
+    width: 80px;
 }
