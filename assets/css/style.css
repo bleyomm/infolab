@@ -119,7 +119,7 @@ nav ul li a:hover::before {
 #banner {
     display: flex;
     flex-direction: row;
-    padding: 50px 10%;
+    padding: 50px 7%;
     background-color: #f7f5f5;
 }
 
@@ -221,7 +221,7 @@ nav ul li a:hover::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 10%;
+    padding: 50px 7%;
     background-color: #FFF;
 }
 
@@ -270,7 +270,7 @@ nav ul li a:hover::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 10%;
+    padding: 50px 7%;
     background-color: #FFF;
 }
 
@@ -316,7 +316,7 @@ nav ul li a:hover::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 10%;
+    padding: 50px 7%;
     background-color: #FFF;
 }
 
@@ -333,18 +333,17 @@ nav ul li a:hover::before {
     background-color:rgba(235, 66, 69, 0.37);
 
     border-radius: 30px;
-    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    padding: 0px 40px;
+    padding: 5px 40px;
 }
 
 .comillas{
     width: 70px;
-    position: absolute;
-    top: 100px;
+    position: relative;
+    top: -30px;
 }
 
 .box-opinion .text p{
