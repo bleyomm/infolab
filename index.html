@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infolab</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -55,7 +57,7 @@
     </section>
     <section id="confianza">
         <h2 class="sub-title">¿Porque confiar en Infolab?</h2>
-        <div class="container">
+        <div class="container-seccion">
             <div class="container-imagen">
                 <img src="assets/images/confianza.png"
                     alt="Dos personas agarrandose de la mano transmitiendo confianza.">
@@ -90,7 +92,7 @@
     </section>
     <section id="nosotros">
         <h2 class="sub-title">Sobre nosotros</h2>
-        <div class="container">
+        <div class="container-seccion">
             <div class="container-text">
                 <p>En Infolab, nos dedicamos a revolucionar la gestión de laboratorios clínicos mediante soluciones
                     tecnológicas innovadoras. Con una visión centrada en la eficiencia y la precisión, hemos creado un
@@ -98,7 +100,8 @@
                     procesos de análisis y reporte de resultados.</p>
                 <div class="box-seccion">
                     <div class="imagen">
-                        <img src="assets/images/mision.png" alt="Imagen de puntería haciendo referencia a alcanzar una misión.">
+                        <img src="assets/images/mision.png"
+                            alt="Imagen de puntería haciendo referencia a alcanzar una misión.">
                     </div>
                     <div class="text">
                         <h4>Misión</h4>
@@ -110,7 +113,8 @@
                 </div>
                 <div class="box-seccion">
                     <div class="imagen">
-                        <img src="assets/images/vision.png" alt="Imagen de un ojo haciendo referencia a donde deseamos alcanzar.">
+                        <img src="assets/images/vision.png"
+                            alt="Imagen de un ojo haciendo referencia a donde deseamos alcanzar.">
                     </div>
                     <div class="text">
                         <h4>Visión</h4>
@@ -126,6 +130,72 @@
             </div>
         </div>
     </section>
+    <section id="opiniones">
+        <h2 class="sub-title">Opinión de nuestros usuarios</h2>
+        <div id="carouselExampleAutoplaying" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-box">
+                        <div class="box-opinion">
+                            <img class="comillas" src="assets/images/comillas.png" alt="Comillas">
+                            <div class="text">
+                                <p>"Infolab ha revolucionado nuestro laboratorio clínico con su solución de conexión
+                                    automatizada. La eficiencia mejorada y el soporte excepcional hacen de ellos un
+                                    socio invaluable."</p>
+                            </div>
+                            <div class="avatar">
+                                <img src="assets/images/avatar.jpeg" alt="Imagen del usuario que brindo su opinión.">
+                                <div class="datos">
+                                    <h4>Renee Zacarias</h4>
+                                    <p>Programador Web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container-box">
+                        <div class="box-opinion">
+                            <img class="comillas" src="assets/images/comillas.png" alt="Comillas">
+                            <div class="text">
+                                <p>"Gracias a Infolab, ahora nuestro laboratorio funciona de manera más eficiente y
+                                    precisa. Su tecnología ha simplificado enormemente nuestros procesos."</p>
+                            </div>
+                            <div class="avatar">
+                                <img src="assets/images/avatar2.jpg" alt="Imagen del usuario que brindo su opinión.">
+                                <div class="datos">
+                                    <h4>Bleyomm Walker</h4>
+                                    <p>Tecnólogo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <svg width="30px" height="30px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                        d="M0 8C-1.93129e-07 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 1.93129e-07 8 0C3.58172 -1.93129e-07 1.93129e-07 3.58172 0 8ZM8 12V9H13V7L8 7V4H7L3 8L7 12H8Z"
+                        fill="#030708" fill-rule="evenodd" />
+                </svg>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <svg width="30px" height="30px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                        d="M16 8C16 3.58172 12.4183 -1.93129e-07 8 0C3.58172 1.93129e-07 -1.93129e-07 3.58172 0 8C1.93129e-07 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8ZM8 4V7H3V9H8V12H9L13 8L9 4H8Z"
+                        fill="#030708" fill-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

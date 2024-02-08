@@ -12,7 +12,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 /*header*/
@@ -225,7 +225,7 @@ nav ul li a:hover::before {
     background-color: #FFF;
 }
 
-.container {
+.container-seccion {
     display: flex;
     flex-direction: row;
 }
@@ -308,4 +308,68 @@ nav ul li a:hover::before {
 
 .box-seccion .imagen img{
     width: 80px;
+}
+
+/*opiniones*/
+
+#opiniones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: #FFF;
+}
+
+.container-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10% 50px;
+}
+
+.box-opinion{
+    width: 70%;
+    background-color:rgba(235, 66, 69, 0.37);
+
+    border-radius: 30px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0px 40px;
+}
+
+.comillas{
+    width: 70px;
+    position: absolute;
+    top: 100px;
+}
+
+.box-opinion .text p{
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.box-opinion .avatar .datos h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.box-opinion .avatar .datos p{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
 }
