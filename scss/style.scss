@@ -1,0 +1,88 @@
+@import 'base/variables';
+@import 'base/extends';
+@import 'base/mixin';
+@import 'base/maps';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/banner';
+@import 'components/info';
+@import 'components/confianza';
+@import 'components/nosotros';
+@import 'components/opiniones';
+@import 'components/precios';
+@import 'components/contacto';
+
+/*Varias veces*/
+
+.sub-title {
+  @extend %sub-tittle;
+}
+
+/*responsive mobile*/
+@media (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .box-menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      height: 100%;
+      width: 100%;
+      transition: all 1s ease-in-out;
+      display: none;
+    }
+  }
+
+  .box-menu {
+    .imagen {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      li a {
+        font-size: 25px;
+
+        &::before {
+          height: 3px;
+        }
+      }
+    }
+
+    &.active-menu {
+      transition: all 1s ease-in-out;
+      display: block;
+    }
+  }
+
+  .sub-title {
+    font-size: 30px;
+    text-align: center;
+  }
+}

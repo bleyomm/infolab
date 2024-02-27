@@ -1,0 +1,55 @@
+#banner {
+  @extend %seccion-fila;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    flex-direction: column-reverse;
+  }
+}
+
+.container-text {
+  width: 50%;
+  display: map-get($flex-row, mostrar);
+  padding: 0px 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+.banner-title {
+  font-family: $ff-poppins;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #171717;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+.banner-para {
+  font-family: $ff-inter;
+  font-size: 20px;
+  line-height: 1.5;
+  color: $color-secondary;
+  margin-bottom: 20px;
+}
+
+.container-imagen {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,163 @@
+footer {
+  display: map-get($flex-row, mostrar);
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.box-actualizacion {
+  background-color: $color-quarter;
+  color: white;
+  border-radius: 20px;
+  margin: 50px 7% 0px 7%;
+  padding: 50px 100px;
+  display: map-get($flex-row, mostrar);
+  flex-direction: map-get($flex-row, direccion);
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .text {
+    display: map-get($flex-row, mostrar);
+    flex-direction: column;
+    width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+    h3 {
+      font-size: 25px;
+      font-family: "Popins", sans-serif;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 15px;
+      font-family: $ff-inter;
+    }
+  }
+}
+
+.box-footer {
+  @extend %seccion-column;
+  max-width: 350px;
+  padding: 20px;
+  margin: 20px;
+
+  img {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: $ff-inter;
+    font-size: 15px;
+    color: $color-secondary;
+  }
+
+  h3 {
+    font-family: $ff-poppins;
+    font-size: 17px;
+    font-weight: 600;
+    color: $color-primary;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 15px;
+      font-weight: 500;
+      padding: 5px 0px;
+      font-family: $ff-inter;
+      color: $color-secondary;
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: $color-secondary;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}
+
+.contacto ul li {
+  &:nth-child(1)::before {
+    content: "";
+    padding: 12px;
+    position: relative;
+    left: -10px;
+    top: 10px;
+    background-image: url(../images/icono-telefono.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:nth-child(2)::before {
+    content: "";
+    padding: 12px;
+    position: relative;
+    left: -10px;
+    top: 10px;
+    background-image: url(../images/icono-mail.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:nth-child(3)::before {
+    content: "";
+    padding: 12px;
+    position: relative;
+    left: -10px;
+    top: 10px;
+    background-image: url(../images/icono-ubicacion.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+footer .container-seccion {
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+  justify-content: space-around;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.copyright {
+  display: map-get($flex-row, mostrar);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0px;
+  color: white;
+  background-color: $color-primary;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.redes {
+  display: map-get($flex-row, mostrar);
+  flex-direction: map-get($flex-row, direccion);
+  justify-content: space-around;
+
+  svg {
+    fill: #393939;
+
+    &:hover {
+      fill: #eb4244;
+    }
+  }
+}

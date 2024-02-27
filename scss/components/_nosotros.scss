@@ -1,0 +1,64 @@
+#nosotros {
+    @extend %seccion-column;
+
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+  }
+
+  .container-seccion{
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+  }
+  
+  .container-text {
+    font-family: $ff-inter;
+    font-size: 17px;
+    font-weight: 400;
+    color: $color-secondary;
+    line-height: 1.5rem;
+    padding: 0px 50px;
+
+    
+
+    p {
+      padding: 20px 0px;
+    }
+  
+    h4 {
+      font-size: 22px;
+      font-family: $ff-poppins;
+      font-weight: 800;
+      color: $color-primary;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 5px;
+    }
+
+  }
+
+  .container-imagen{
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+  }
+  
+  .box-seccion {
+    display: map-get($flex-row, mostrar);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+  
+    .imagen {
+      padding: 10px;
+  
+      img {
+        width: 80px;
+      }
+    }
+  }

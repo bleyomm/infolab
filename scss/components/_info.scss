@@ -1,0 +1,58 @@
+#info {
+  @extend %seccion-fila;
+
+  @media (max-width: 768px) {
+    padding: 120px 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgb(0 0 0 / 8%);
+  width: 30%;
+  margin: 0px 30px;
+  position: relative;
+  top: 0;
+  transition: margin-top 0.3s ease-in;
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 70px 0px;
+  }
+
+  &:hover {
+    margin-top: -30px;
+    transition: margin-top 0.3s ease-in;
+  }
+
+  .number-text {
+    background-image: url(../images/figura.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-x: center;
+    height: 200px;
+    display: map-get($flex-row, mostrar);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -120px;
+
+    span {
+      font-family: $ff-poppins;
+      font-weight: 800;
+      font-size: 35px;
+      color: #fff;
+    }
+  }
+
+  .line-text {
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: $ff-inter;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}

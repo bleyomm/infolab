@@ -1,0 +1,100 @@
+#contacto {
+  @extend %seccion-column;
+
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    padding: 5px;
+  }
+}
+
+.container-seccion {
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .container-imagen {
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.container-text form {
+  .contact-text {
+    font-family: $ff-poppins;
+    font-size: 17px;
+    color: $color-primary;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 5px;
+    }
+  }
+
+  input[type="text"] {
+    outline: none;
+    font-family: $ff-inter;
+    font-size: 14px;
+    color: $color-secondary;
+    border-radius: 5px;
+    border: 1px solid $color-secondary;
+    padding: 8px 10px;
+  }
+
+  textarea {
+    outline: none;
+    font-family: $ff-inter;
+    font-size: 14px;
+    color: $color-secondary;
+    border-radius: 5px;
+    border: 1px solid $color-secondary;
+    padding: 8px 10px;
+  }
+
+  a {
+    font-family: $ff-inter;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10.5px 35px;
+    border-radius: 5px;
+    background-color: $color-quarter;
+    color: #fff;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+input[type="email"] {
+  outline: none;
+  font-family: $ff-inter;
+  font-size: 14px;
+  color: $color-secondary;
+  border-radius: 5px;
+  border: 1px solid $color-secondary;
+  padding: 8px 10px;
+}
+
+.maps {
+  border: 0;
+  width: 100%;
+  height: 400px;
+
+  @media (max-width: 768px) {
+    padding: 5px;
+  }
+}
+
+.d-flex {
+  @media (max-width: 768px) {
+    width: 100%;
+
+    &.mobile {
+      justify-content: center;
+    }
+  }
+}

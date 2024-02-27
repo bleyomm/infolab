@@ -1,0 +1,78 @@
+#opiniones {
+    @extend %seccion-column;
+
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    @media (max-width: 768px) {
+        display: none;
+    }
+  }
+  
+  .container-box {
+    display: map-get($flex-row, mostrar);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10% 50px;
+    @media (max-width: 768px) {
+        padding: 5px;
+    }
+  }
+  
+  .box-opinion {
+    width: 70%;
+    background-color: rgba(235, 66, 69, 0.37);
+    border-radius: 30px;
+    display: map-get($flex-row, mostrar);
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 5px 40px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+  }
+  
+  .comillas {
+    width: 70px;
+    position: relative;
+    top: -30px;
+  }
+  
+  .box-opinion .text p {
+    font-size: 22px;
+    font-family: $ff-inter;
+    font-style: italic;
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+    }
+  }
+  
+  .avatar {
+    display: map-get($flex-row, mostrar);
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+  
+  .box-opinion .avatar .datos {
+    h4 {
+      font-family: $ff-inter;
+      font-size: 20px;
+    }
+  
+    p {
+      font-family: $ff-inter;
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,62 @@
+#confianza {
+  @extend %seccion-column;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+.container-seccion {
+  display: map-get($flex-row, mostrar);
+  flex-direction: map-get($flex-row, direccion);
+
+  @media (max-width: 768px) {
+    flex-direction: map-get($flex-column, direccion);
+
+  }
+
+  .container-imagen{
+    @media (max-width: 768px) {
+        width: 100%;
+      margin-bottom: 30px;
+      }
+  }
+}
+
+.container-text {
+  display: map-get($flex-row, mostrar);
+  justify-content: center;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 5px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      font-family: $ff-poppins;
+      font-size: 22px;
+      font-weight: 700;
+      color: $color-primary;
+      cursor: pointer;
+      margin-bottom: 15px;
+
+      p {
+        font-family: $ff-inter;
+        font-size: 17px;
+        font-weight: 400;
+        color: $color-secondary;
+        line-height: 1.5rem;
+        padding-right: 50px;
+        padding-left: 10px;
+      }
+
+      &::before {
+        content: ">";
+      }
+    }
+  }
+}

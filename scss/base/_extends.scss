@@ -1,0 +1,23 @@
+%seccion-fila {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 7%;
+  background-color: #f7f5f5;
+}
+
+%seccion-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 7%;
+  background-color: #fff;
+}
+
+%sub-tittle {
+  font-family: $ff-poppins;
+  font-size: 58px;
+  font-weight: 900;
+  color: $color-primary;
+  margin-bottom: 30px;
+}
