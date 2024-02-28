@@ -12,11 +12,13 @@
 @import 'components/opiniones';
 @import 'components/precios';
 @import 'components/contacto';
+@import 'components/animaciones';
 
 /*Varias veces*/
 
 .sub-title {
   @extend %sub-tittle;
+  @extend %slide-top;
 }
 
 /*responsive mobile*/

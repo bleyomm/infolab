@@ -18,6 +18,7 @@
     align-items: center;
     width: 100%;
     padding: 10% 50px;
+    @extend %slide-top;
     @media (max-width: 768px) {
         padding: 5px;
     }

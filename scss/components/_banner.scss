@@ -28,7 +28,7 @@
   line-height: 1.1;
   color: #171717;
   margin-bottom: 20px;
-
+  @extend %slide-right;
   @media (max-width: 768px) {
     font-size: 40px;
   }
@@ -40,11 +40,12 @@
   line-height: 1.5;
   color: $color-secondary;
   margin-bottom: 20px;
+  @extend %slide-right;
 }
 
 .container-imagen {
   width: 50%;
-
+  @extend %slide-left;
   img {
     width: 100%;
   }

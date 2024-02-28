@@ -1,87 +1,87 @@
 header {
-    background-color: #f7f5f5;
-    display: map-get($flex-row, mostrar);
-    flex-direction: map-get($flex-row, direccion);
-    justify-content: space-between;
-    padding: 10px 7%;
+  background-color: #f7f5f5;
+  display: map-get($flex-row, mostrar);
+  flex-direction: map-get($flex-row, direccion);
+  justify-content: space-between;
+  padding: 10px 7%;
 
-    @media (max-width: 768px) {
-        padding: 10px;
-    }
+  @media (max-width: 768px) {
+    padding: 10px;
   }
-  
-  .desktop {
+}
+
+.desktop {
+  width: 100%;
+  display: map-get($flex-row, mostrar);
+  flex-direction: map-get($flex-row, direccion);
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.logo {
+  width: 200px;
+  img {
     width: 100%;
-    display: map-get($flex-row, mostrar);
-    flex-direction: map-get($flex-row, direccion);
-    justify-content: space-between;
+  }
+  @extend %slide-right;
+}
 
-    @media (max-width: 768px) {
-        display: none;
-    }
+header nav {
+  display: map-get($flex-row, mostrar);
+  justify-content: center;
+  align-items: center;
+  @extend %slide-bottom;
+}
 
-  }
-  .logo {
-    width: 200px;
-  
-    img {
-      width: 100%;
-    }
-  }
-  
-  header nav {
-    display: map-get($flex-row, mostrar);
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: map-get($flex-row, mostrar);
-  
-    li {
-      margin-right: 20px;
-  
-      a {
-        font-family: $ff-inter;
-        font-size: 17px;
-        font-weight: 500;
-        padding: 5px 2px;
-        margin: 0px 10px;
-        text-decoration: none;
-        position: relative;
-        color: #393939;
-  
-        &.active::before {
-          width: 100%;
-        }
-  
-        &::before {
-          content: "";
-          bottom: 0;
-          left: 0;
-          position: absolute;
-          width: 0;
-          height: 1px;
-          background: $color-quarter;
-          transition: width .2s linear;
-        }
-  
-        &:hover::before {
-          width: 100%;
-        }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: map-get($flex-row, mostrar);
+
+  li {
+    margin-right: 20px;
+
+    a {
+      font-family: $ff-inter;
+      font-size: 17px;
+      font-weight: 500;
+      padding: 5px 2px;
+      margin: 0px 10px;
+      text-decoration: none;
+      position: relative;
+      color: #393939;
+
+      &.active::before {
+        width: 100%;
+      }
+
+      &::before {
+        content: "";
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background: $color-quarter;
+        transition: width 0.2s linear;
+      }
+
+      &:hover::before {
+        width: 100%;
       }
     }
   }
-  
-  .button {
-    display: map-get($flex-row, mostrar);
-    justify-content: center;
-    align-items: center;
-  
-    a {
-      @include button();
-    }
+}
+
+.button {
+  display: map-get($flex-row, mostrar);
+  justify-content: center;
+  align-items: center;
+  @extend %slide-left;
+  a {
+    @include button();
   }
+}

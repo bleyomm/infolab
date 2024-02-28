@@ -16,6 +16,7 @@
   }
 
   .container-imagen{
+    @extend %slide-right;
     @media (max-width: 768px) {
         width: 100%;
       margin-bottom: 30px;
@@ -44,6 +45,8 @@
       cursor: pointer;
       margin-bottom: 15px;
 
+      @extend %slide-top;
+
       p {
         font-family: $ff-inter;
         font-size: 17px;
@@ -52,6 +55,7 @@
         line-height: 1.5rem;
         padding-right: 50px;
         padding-left: 10px;
+        @extend %slide-top;
       }
 
       &::before {
